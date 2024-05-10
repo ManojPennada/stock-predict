@@ -1,0 +1,7 @@
+yfinance
+flask
+sklearn.model_selection
+sklearn.ensemble
+xgboost
+sklearn.metrics
+numpy
