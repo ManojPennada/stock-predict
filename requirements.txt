@@ -1,7 +1,7 @@
 yfinance
 flask
-sklearn.model_selection
-sklearn.ensemble
 xgboost
-sklearn.metrics
 numpy
+scikit-learn
+plotly
+matplotlib
