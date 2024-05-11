@@ -87,18 +87,24 @@
     <div class="container">
         <h1>Stock Price Prediction</h1>
         <form method="post">
-            <label for="ticker">Enter Ticker Symbol:</label>
-            <br>
-            <input type="text" id="ticker" name="ticker" required>
-            <br><br>
+            <label for="ticker">Enter Ticker Symbol:</label><br>
+            <input type="text" id="ticker" name="ticker" required><br><br>
+
+            <label for="start_date">Start Date:</label><br>
+            <input type="date" id="start_date" name="start_date" required><br><br>
+
+            <label for="end_date">End Date:</label><br>
+            <input type="date" id="end_date" name="end_date" required><br><br>
+
             <label for="model">Select Model:</label>
             <select name="model" id="model">
                 <option value="random_forest">Random Forest</option>
                 <option value="xgboost">XGBoost</option>
-            </select>
-            <br><br>
+            </select><br><br>
+
             <button type="submit">Predict Next Closing Price</button>
         </form>
+
         {% if prediction %}
         <h2>Predicted Next Closing Price: {{ prediction }}</h2>
         {% endif %}
